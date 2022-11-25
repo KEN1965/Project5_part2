@@ -39,6 +39,9 @@ struct ContentView: View {
                 }
             }
             .navigationTitle(rootWord)
+            .toolbar{
+                Button("Restart",action: startGame)
+            }
             //Reternキーでメソッドを追加
             .onSubmit(addNewWord)
             //loadしビューが表示さえたときに呼び出します
